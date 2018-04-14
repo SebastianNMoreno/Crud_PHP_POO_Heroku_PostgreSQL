@@ -2,7 +2,7 @@
 include_once('JOBS_SERVER.php');//SERVIDOR BACKEND
 
 //fetch the record to be updated
-if(isset($_GET['edit'])){
+if(isset($_GET['editar'])){
     $trabajo_id = $_GET['editar'];
     $edit_state = true;
     //frontend 7) llamara datos
