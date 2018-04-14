@@ -2,8 +2,8 @@
     include_once('server.php');
 
     //fetch the record to be updated
-    if(isset($_GET['edit'])){
-        $empleado_id = $_GET['edit'];
+    if(isset($_GET['editar'])){
+        $empleado_id = $_GET['editar'];
         $edit_state = true;
     //frontend 7) llamara datos
         $rec = pg_query($db, "SELECT * FROM employees WHERE empleado_id=$empleado_id");
@@ -127,11 +127,11 @@
         <td><?php echo $row['estado_civil']; ?></td>
         <td>
             <!--10)//actualizar registros-->
-            <a class="ui circular blue  icon button" href="index.php?edit=<?php echo $row['empleado_id'];?>"> Edit</a>
+            <a class="ui circular blue  icon button" href="index.php?edit=<?php echo $row['empleado_id'];?>"> Editar</a>
         </td>
         <td>
            <!-- 11)BORRAR REGISTROS-->
-            <a class="ui circular teal twitter icon button" href="server.php?del=<?php echo $row['empleado_id'];?>" >Delete</a>
+            <a class="ui circular teal twitter icon button" href="server.php?del=<?php echo $row['empleado_id'];?>" >Eliminar</a>
         </td>
     </tr>
 
