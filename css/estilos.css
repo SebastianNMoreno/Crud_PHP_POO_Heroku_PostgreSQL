@@ -96,7 +96,7 @@ form{
 
 }
 
-.edit_btn{
+.editar_btn{
     text-decoration: #8c0615;
     padding: 2px 5px;
     background: #4f20b5;
@@ -104,7 +104,7 @@ form{
     border-radius: 3px;
 
 }
-.delete_btn{
+.eliminar_btn{
     text-decoration: #8c0615;
     padding: 2px 5px;
     background: #9f3a38;
