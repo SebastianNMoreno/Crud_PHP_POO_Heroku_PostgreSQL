@@ -2,8 +2,8 @@
 include_once('DEPARTMENTS_SERVER.php');//SERVIDOR BACKEND
 
 //fetch the record to be updated
-if(isset($_GET['edit'])){
-    $departamento_id = $_GET['edit'];
+if(isset($_GET['editar'])){
+    $departamento_id = $_GET['editar'];
     $edit_state = true;
     //frontend 7) llamara datos
     $rec = pg_query($db, "SELECT * FROM departments WHERE departamento_id=$departamento_id");
@@ -98,11 +98,11 @@ if(isset($_GET['edit'])){
 
             <td>
                 <!--10)//actualizar registros-->
-                <a class="ui circular blue  icon button" href="DEPARTMENTS.php?edit=<?php echo $row['departamento_id'];?>"> Edit</a>
+                <a class="ui circular blue  icon button" href="DEPARTMENTS.php?edit=<?php echo $row['departamento_id'];?>"> Editar</a>
             </td>
             <td>
                 <!-- 11)BORRAR REGISTROS-->
-                <a class="ui circular teal twitter icon button" href="DEPARTMENTS_SERVER.php?del=<?php echo $row['departamento_id'];?>" >Delete</a>
+                <a class="ui circular teal twitter icon button" href="DEPARTMENTS_SERVER.php?del=<?php echo $row['departamento_id'];?>" >Eliminar</a>
             </td>
         </tr>
 
