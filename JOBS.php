@@ -3,7 +3,7 @@ include_once('JOBS_SERVER.php');//SERVIDOR BACKEND
 
 //fetch the record to be updated
 if(isset($_GET['edit'])){
-    $trabajo_id = $_GET['edit'];
+    $trabajo_id = $_GET['editar'];
     $edit_state = true;
     //frontend 7) llamara datos
     $rec = pg_query($db, "SELECT * FROM jobs WHERE trabajo_id=$trabajo_id");
@@ -25,7 +25,7 @@ if(isset($_GET['edit'])){
 <html lang="es">
 
 <head>
-    <title> MI primer CRUD</title>
+    <title> Primer CRUD</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="css/estilos.css">
     <link rel="stylesheet" type="text/css" href="css/semantic.min.css">
@@ -98,11 +98,11 @@ if(isset($_GET['edit'])){
 
             <td>
                 <!--10)//actualizar registros-->
-                <a class="ui circular blue  icon button" href="JOBS.php?edit=<?php echo $row['trabajo_id'];?>"> Edit</a>
+                <a class="ui circular blue  icon button" href="JOBS.php?edit=<?php echo $row['trabajo_id'];?>"> Editar</a>
             </td>
             <td>
                 <!-- 11)BORRAR REGISTROS-->
-                <a class="ui circular teal twitter icon button" href="JOBS_SERVER.php?del=<?php echo $row['trabajo_id'];?>" >Delete</a>
+                <a class="ui circular teal twitter icon button" href="JOBS_SERVER.php?del=<?php echo $row['trabajo_id'];?>" >Eliminar</a>
             </td>
         </tr>
 
