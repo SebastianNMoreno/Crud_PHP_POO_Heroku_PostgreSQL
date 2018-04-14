@@ -50,7 +50,7 @@ if(isset($_POST['save'])){
     pg_query($db, $query);
     //Mostrar notificaciones de mensajes
     //3
-    $_SESSION['msg'] = "Imformacion Guardada";
+    $_SESSION['msg'] = "La informacion se a guardado";
 
     header('location: JOBS.php'); //redireccionamos a la pagina principal
 
