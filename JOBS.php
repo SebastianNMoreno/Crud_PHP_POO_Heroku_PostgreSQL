@@ -42,17 +42,17 @@ if(isset($_GET['editar'])){
 <!--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
 <div class="ui teal  menu">
     <div class="header item">
-        CRUD PHP HEROKU POSTGRESQL
+        CRUP HEROKU
     </div>
     <a class="item active " href="index.php" >
-        EMPLOYEES
+        EMPLEADOS
     </a>
     <a class="item" href="DEPARTMENTS.php">
-        DEPARTMENTS
+        DEPARTAMENTOS
 
     </a>
     <a class="item" href="JOBS.php">
-        JOBS
+        TRABAJADORES
     </a>
 </div>
 <!--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
